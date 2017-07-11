@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="calendar_area">
+    <button bindtap="showCalendar">日历</button>
+    <view class="{{visible == false?'hide':'visible'}}">
+      <import src="../../calendar/calendar.wxml" />
+      <template is="calendar" data="{{...calendar}}"></template>
+    </view>
+  </view>
+  <view class="news_list">
+    <view id="{{item.id}}" class="items" wx:for="{{d_item}}" wx:key="{{index}}" bindtap="readArticle">
+      <view class="item_container">
+        <view class="title">{{item.title}}</view>
+        <view class="thumbnail">
+          <image src="{{item.images[0]}}" mode="scaleToFill"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

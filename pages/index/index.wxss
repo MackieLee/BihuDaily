@@ -1,0 +1,47 @@
+@import "../../calendar/calendar.wxss";
+.calendar_area{
+  position: absolute;
+  top: 0;
+  background: #fff;
+  z-index: 1500;
+  width: 100%;
+}
+.hide{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.news_list{
+  position:absolute;
+  top: 3rem;
+  z-index: 0;
+}
+.items{
+  width: 100%;
+}
+.item_container{
+  width: 95%;
+  height: 90%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border:1px solid #dedede;
+  border-radius: 6px;
+  box-shadow: 7px 7px 5px #dedede;
+  overflow: hidden;
+}
+.title{
+  width:64%;
+  float: left;
+  font-size:0.8rem;
+  font-weight: bold;
+  margin: 3%;
+}
+.thumbnail{
+  width: 30%;
+  float: right;
+}
+.thumbnail image{
+  height: 4.6rem;
+  width: 95%;
+}
